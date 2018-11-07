@@ -1,23 +1,14 @@
-img {
-  width: 980px;
-  height: 370;
-  text-align: center;
-  display: inline-block !important;
-}
 
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    position: relative;
+    z-index: 999;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px rgba(0, 0, 0, 0.5);
 }
 
 .background {
@@ -33,6 +24,22 @@ img {
   left: 0;
   width: 100%;
   z-index:-9999;
+}
+
+.img-slider {
+  width: 980px;
+  height: 370;
+  text-align: center;
+  display: inline-block !important;
+}
+
+.logo {
+  width: 180px;
+}
+
+.img1 {
+  float: left;
+  position: absolute;
 }
 
 .slide {

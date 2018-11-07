@@ -6,17 +6,14 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div>a;lsdkfj;alskdjf;</div>
-        {/* <section className="slideshow"> */}
         <section className="slideshow">
           <div className="slideshow-container slide">
             <div className="slider1-css">
               <img src={image1} />
-              <img src={image2} />
+              <img src={image2} className="img1" />
             </div>
           </div>
         </section>
-        {/* </section> */}
       </React.Fragment>
     );
   }
