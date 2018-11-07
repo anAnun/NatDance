@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="App" />
+        <div className="App background" />
         <Route exact path="" component={Home} />
       </React.Fragment>
     );

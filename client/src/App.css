@@ -1,3 +1,10 @@
+img {
+  width: 980px;
+  height: 370;
+  text-align: center;
+  display: inline-block !important;
+}
+
 .App {
   text-align: center;
 }
@@ -13,11 +20,55 @@
   color: white;
 }
 
+.background {
+  background-image: url("./images/Background.jpg");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  min-height: 100%;
+  min-width: 1024px;
+  position: fixed;
+  height: auto;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index:-9999;
+}
+
+.slide {
+  animation: slide 24s ease infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  
+  12.5% {
+    transform: translateX(0%);
+  }
+  
+  
+  50% {
+    transform: translateX(-100%);
+  }
+  
+  62.5% {
+    transform: translateX(-100%);
+  }
+  
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
 .slider1-css {
   width: 1060px; 
   height: 400.204px; 
   margin-top: 0px; 
   margin-left: 0px;
+  
 }
 
 .slider1-wrapper {
@@ -26,7 +77,29 @@
 }
 
 .slider1-image {
-  background-image: "./images/Slider1.jpg"
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.slider2-image {
+  background-repeat: no-repeat;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+.slideshow {
+  width: 980px;
+  height: 370px;
+  margin: 0 auto;
+  overflow: hidden;
+  border: solid 1px white;
+}
+
+.slideshow-container {
+  width: 980px;
+  font-size: 0;
+  transition: 1s ease;
+  height: 600px;
+  position: relative;
+}
