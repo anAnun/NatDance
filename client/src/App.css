@@ -26,13 +26,6 @@
   z-index:-9999;
 }
 
-.img-slider {
-  width: 980px;
-  height: 370;
-  text-align: center;
-  display: inline-block !important;
-}
-
 .logo {
   width: 180px;
 }
@@ -76,23 +69,6 @@
   margin-top: 0px; 
   margin-left: 0px;
   
-}
-
-.slider1-wrapper {
-  opacity: 1; 
-  height: 400px;
-}
-
-.slider1-image {
-  background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.slider2-image {
-  background-repeat: no-repeat;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .slideshow {
