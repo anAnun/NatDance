@@ -26,14 +26,16 @@
   z-index:-9999;
 }
 
-.logo {
-  width: 180px;
-}
-
 .img1 {
   float: left;
   position: absolute;
 }
+
+
+.logo {
+  width: 180px;
+}
+
 
 .slide {
   animation: slide 24s ease infinite;
@@ -86,3 +88,4 @@
   height: 600px;
   position: relative;
 }
+
