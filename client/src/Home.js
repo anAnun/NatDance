@@ -1,6 +1,7 @@
 import React from "react";
 import image1 from "./images/Slider1.jpg";
 import image2 from "./images/Slider2.jpg";
+import SocialMediaIcons from "./SocialMediaIcons";
 
 class Home extends React.Component {
   render() {
