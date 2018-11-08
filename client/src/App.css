@@ -33,6 +33,11 @@
   display: inline-block !important;
 }
 
+.zimbabwe {
+  background-color: black;
+  border-radius: 5px;
+}
+
 .logo {
   width: 180px;
 }
