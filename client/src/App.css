@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.andrew {
+ background: white; 
+}
+
 .App-header {
     position: relative;
     z-index: 999;
