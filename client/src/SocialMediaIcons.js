@@ -7,7 +7,6 @@ class SocialMediaIcons extends React.Component {
       <React.Fragment>
         <div className="icon-wrapper">
           <a
-            target="_blank"
             className="fuse_social_icons_links"
             href="https://www.facebook.com/natalie.avakian.1"
           >
@@ -15,7 +14,6 @@ class SocialMediaIcons extends React.Component {
           </a>
           <br />
           <a
-            target="_blank"
             className="fuse_social_icons_links"
             href="https://twitter.com/NatalieAvakian"
           >
@@ -23,7 +21,6 @@ class SocialMediaIcons extends React.Component {
           </a>
           <br />
           <a
-            target="_blank"
             className="fuse_social_icons_links"
             href="https://www.youtube.com/user/Dancelessonsinla"
           >
@@ -31,7 +28,6 @@ class SocialMediaIcons extends React.Component {
           </a>
           <br />
           <a
-            target="_blank"
             className="fuse_social_icons_links"
             href="https://www.instagram.com/natalieavakian/"
           >
@@ -39,7 +35,6 @@ class SocialMediaIcons extends React.Component {
           </a>
           <br />
           <a
-            target="_blank"
             className="fuse_social_icons_links"
             href="http://www.yelp.com/biz/natalie-avakian-dance-glendale"
           >

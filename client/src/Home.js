@@ -10,8 +10,8 @@ class Home extends React.Component {
           <section className="slideshow">
             <div className="slideshow-container slide">
               <div className="slider1-css">
-                <img src={image1} className="auto-size" />
-                <img src={image2} className="img1 auto-size" />
+                <img alt="" src={image1} className="auto-size" />
+                <img alt="" src={image2} className="img1 auto-size" />
               </div>
             </div>
           </section>
