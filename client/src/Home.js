@@ -41,6 +41,11 @@ class Home extends React.Component {
               teaches her students, gathering attendees up to 300 weekly. During
               her busy schedule as a performer and coach, she enjoys and devotes
               time for her students to become the best dancers they can be.
+              <div>
+                <button>CALL US TODAY</button>
+                <button>EMAIL US</button>
+                <button>BOOK TODAY</button>
+              </div>
             </div>
           </div>
           <div className="block content-2">
