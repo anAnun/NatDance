@@ -1,13 +1,19 @@
+
+
 .App {
   text-align: center;
 } 
 
 .App-header {
-    position: fixed;
-    z-index: 999;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+  position: fixed;
+}
+
+.App-header-wrapper {
+  padding-bottom: 67px;
 }
 
 .auto-size {
