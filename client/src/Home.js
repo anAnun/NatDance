@@ -3,6 +3,10 @@ import image1 from "./images/Slider1.jpg";
 import image2 from "./images/Slider2.jpg";
 
 class Home extends React.Component {
+  sendEmail = () => {
+    window.location.href = "mailto:n.avakian@hotmail.com";
+  };
+
   render() {
     return (
       <React.Fragment>
@@ -41,10 +45,18 @@ class Home extends React.Component {
               teaches her students, gathering attendees up to 300 weekly. During
               her busy schedule as a performer and coach, she enjoys and devotes
               time for her students to become the best dancers they can be.
-              <div>
-                <button>CALL US TODAY</button>
-                <button>EMAIL US</button>
-                <button>BOOK TODAY</button>
+              <div className="button-group">
+                <div>
+                  <button className="home-buttons">CALL US TODAY</button>
+                </div>
+                <div>
+                  <button className="home-buttons" onClick={this.sendEmail}>
+                    EMAIL US TODAY
+                  </button>
+                </div>
+                <div>
+                  <button className="home-buttons">BOOK TODAY</button>
+                </div>
               </div>
             </div>
           </div>
