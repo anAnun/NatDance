@@ -79,10 +79,13 @@
   position: absolute;
 }
 
-.logo {
-  width: 180px;
-  cursor: pointer;
+input:focus {
+  outline:none !important;
 }
+
+button:focus {
+  outline:none !important;
+}   
 
 .liner-text {
   display: block;

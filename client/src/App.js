@@ -6,6 +6,10 @@ import WhatsNew from "./WhatsNew";
 import "./App.css";
 import SocialMediaIcons from "./SocialMediaIcons";
 import NavBar from "./NavBar";
+import Store from "./Store";
+import Portfolio from "./Portfolio";
+import Contact from "./Contact";
+import About from "./About";
 
 class App extends Component {
   render() {
@@ -16,6 +20,10 @@ class App extends Component {
         <SocialMediaIcons />
         <Route exact path="/" component={Home} />
         <Route exact path="/whats-new" component={WhatsNew} />
+        <Route exact path="/store" component={Store} />
+        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/about" component={About} />
       </React.Fragment>
     );
   }

@@ -1,20 +1,140 @@
 import React from "react";
 import logo from "./images/logo.png";
+import { Link } from "react-router-dom";
+import "./NavBar.css";
 
 class NavBar extends React.Component {
+  state = {
+    whatsnew: false,
+    store: false,
+    contact: false,
+    about: false,
+    portfolio: false
+  };
   render() {
     return (
       <div className="App-header-wrapper">
         <div className="App-header">
-          <img
-            alt=""
-            src={logo}
-            className="logo"
-            onClick={() => this.props.history.push("/")}
-          />
-          <button onClick={() => this.props.history.push("/whats-new")}>
-            whatsnew
-          </button>
+          <div className="container-nav">
+            <Link to="/">
+              <img
+                className="content-home"
+                alt=""
+                src={logo}
+                className="logo"
+                onClick={() =>
+                  this.setState({
+                    whatsnew: false,
+                    store: false,
+                    contact: false,
+                    about: false,
+                    portfolio: false
+                  })
+                }
+              />
+            </Link>
+
+            <Link to="/whats-new">
+              <button
+                className={
+                  this.state.whatsnew
+                    ? "content-whats-new link-focus bottom"
+                    : "content-whats-new link bottom"
+                }
+                onClick={() =>
+                  this.setState({
+                    whatsnew: true,
+                    store: false,
+                    contact: false,
+                    about: false,
+                    portfolio: false
+                  })
+                }
+              >
+                What's new
+              </button>
+            </Link>
+            <Link to="/store">
+              <button
+                className={
+                  this.state.store
+                    ? "content-whats-new link-focus bottom"
+                    : "content-whats-new link bottom"
+                }
+                onClick={() =>
+                  this.setState({
+                    whatsnew: false,
+                    store: true,
+                    contact: false,
+                    about: false,
+                    portfolio: false
+                  })
+                }
+              >
+                Store
+              </button>
+            </Link>
+            <Link to="/contact">
+              <button
+                className={
+                  this.state.contact
+                    ? "content-whats-new link-focus bottom"
+                    : "content-whats-new link bottom"
+                }
+                onClick={() =>
+                  this.setState({
+                    whatsnew: false,
+                    store: false,
+                    contact: true,
+                    about: false,
+                    portfolio: false
+                  })
+                }
+              >
+                Contact
+              </button>
+            </Link>
+            <Link to="/about">
+              <button
+                className={
+                  this.state.about
+                    ? "content-whats-new link-focus bottom"
+                    : "content-whats-new link bottom"
+                }
+                onClick={() =>
+                  this.setState({
+                    whatsnew: false,
+                    store: false,
+                    contact: false,
+                    about: true,
+                    portfolio: false
+                  })
+                }
+              >
+                About
+              </button>
+            </Link>
+            <Link to="/portfolio">
+              <button
+                className={
+                  this.state.portfolio
+                    ? "content-whats-new link-focus bottom"
+                    : "content-whats-new link bottom"
+                }
+                onClick={() =>
+                  this.setState({
+                    whatsnew: false,
+                    store: false,
+                    contact: false,
+                    about: false,
+                    portfolio: true
+                  })
+                }
+              >
+                Portfolio
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
     );
