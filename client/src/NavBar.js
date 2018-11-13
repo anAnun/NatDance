@@ -18,10 +18,9 @@ class NavBar extends React.Component {
           <div className="container-nav">
             <Link to="/">
               <img
-                className="content-home"
+                className="content-home bottom logo-style"
                 alt=""
                 src={logo}
-                className="logo"
                 onClick={() =>
                   this.setState({
                     whatsnew: false,
@@ -58,8 +57,8 @@ class NavBar extends React.Component {
               <button
                 className={
                   this.state.store
-                    ? "content-whats-new link-focus bottom"
-                    : "content-whats-new link bottom"
+                    ? "content-store link-focus bottom"
+                    : "content-store link bottom"
                 }
                 onClick={() =>
                   this.setState({
@@ -78,8 +77,8 @@ class NavBar extends React.Component {
               <button
                 className={
                   this.state.contact
-                    ? "content-whats-new link-focus bottom"
-                    : "content-whats-new link bottom"
+                    ? "content-contact link-focus bottom"
+                    : "content-contact link bottom"
                 }
                 onClick={() =>
                   this.setState({
@@ -98,8 +97,8 @@ class NavBar extends React.Component {
               <button
                 className={
                   this.state.about
-                    ? "content-whats-new link-focus bottom"
-                    : "content-whats-new link bottom"
+                    ? "content-about link-focus bottom"
+                    : "content-about link bottom"
                 }
                 onClick={() =>
                   this.setState({
@@ -118,8 +117,8 @@ class NavBar extends React.Component {
               <button
                 className={
                   this.state.portfolio
-                    ? "content-whats-new link-focus bottom"
-                    : "content-whats-new link bottom"
+                    ? "content-portfolio link-focus bottom"
+                    : "content-portfolio link bottom"
                 }
                 onClick={() =>
                   this.setState({

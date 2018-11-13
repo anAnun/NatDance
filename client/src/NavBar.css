@@ -1,16 +1,33 @@
+
+.App-header {
+    z-index: 999;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px rgba(0, 0, 0, 0.5);
+    position: fixed;
+}
+  
+.App-header-wrapper {
+    padding-bottom: 67px;
+}  
+
 .bottom {
     vertical-align: bottom;
     height: 100%;
 }
 
 .container-nav {
-        display: grid;
-        width: 980px;
-        height: auto;
-        grid-template-columns: 180px 70px 70px 70px 70px 70px;
-        grid-gap: 1rem;
-        grid-template-areas:
-            "content-home content-store content-contact content-about content-portfolio"
+    display: grid;
+    width: 980px;
+    height: auto;
+    grid-template-columns: 180px 70px 70px 70px 70px 70px;
+    grid-gap: 1rem;
+    grid-template-areas:
+        "content-home content-whats-new content-store content-contact content-about content-portfolio";
+}
+
+.content-whats-new {
+    grid-area: content-whats-new;
 }
 
 .content-home{
@@ -63,7 +80,7 @@
     display: inline-block !important;
 }
 
-.logo {
+.logo-style {
     width: 180px;
     cursor: pointer;
-  }
+}
