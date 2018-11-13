@@ -140,7 +140,10 @@ class NavBar extends React.Component {
       <Navbar inverse collapseOnSelect className="App-header">
         <Navbar.Header>
           <Navbar.Brand>
-            <img className="logo-style" alt="" src={logo} />
+            <a href="/">
+              {" "}
+              <img className="logo-style" alt="" src={logo} />
+            </a>
           </Navbar.Brand>
           <Navbar.Toggle />
         </Navbar.Header>
