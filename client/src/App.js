@@ -4,31 +4,26 @@ import { Route } from "react-router";
 import Home from "./Home";
 import WhatsNew from "./WhatsNew";
 import "./App.css";
-import logo from "./images/logo.png";
 import SocialMediaIcons from "./SocialMediaIcons";
+import NavBar from "./NavBar";
+import Store from "./Store";
+import Portfolio from "./Portfolio";
+import Contact from "./Contact";
+import About from "./About";
 
 class App extends Component {
   render() {
     return (
       <React.Fragment>
         <div className="App background" />
-        <div className="App-header-wrapper">
-          <div className="App-header">
-            <img
-              alt=""
-              src={logo}
-              className="logo"
-              onClick={() => this.props.history.push("/")}
-            />
-            <button onClick={() => this.props.history.push("/whats-new")}>
-              whatsnew
-            </button>
-          </div>
-        </div>
-
+        <NavBar />
         <SocialMediaIcons />
         <Route exact path="/" component={Home} />
         <Route exact path="/whats-new" component={WhatsNew} />
+        <Route exact path="/store" component={Store} />
+        <Route exact path="/portfolio" component={Portfolio} />
+        <Route exact path="/contact" component={Contact} />
+        <Route exact path="/about" component={About} />
       </React.Fragment>
     );
   }
