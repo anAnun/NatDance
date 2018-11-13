@@ -5,6 +5,7 @@
     background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 2px rgba(0, 0, 0, 0.5);
     position: fixed;
+    height: 70px;
 }
   
 .App-header-wrapper {
@@ -18,9 +19,9 @@
 
 .container-nav {
     display: grid;
-    width: 980px;
-    height: auto;
-    grid-template-columns: 180px 70px 70px 70px 70px 70px;
+    min-width: 650px;
+    min-height: 65px;
+    grid-template-columns: 180px 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 1rem;
     grid-template-areas:
         "content-home content-whats-new content-store content-contact content-about content-portfolio";
@@ -83,4 +84,36 @@
 .logo-style {
     width: 180px;
     cursor: pointer;
+}
+
+.margin{
+    margin-bottom: 65px;
+}
+
+.fixed {
+    position: fixed;
+    float: none;
+}
+
+.navbar{
+    height: 110px;
+}
+
+.navbar-brand{
+    height: 110px;
+    width: auto;
+    float: left;
+}
+
+.navbar-nav{
+    padding-top: 50px;
+    font-size: 15px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #ff0078;
 }
