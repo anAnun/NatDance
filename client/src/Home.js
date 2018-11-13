@@ -10,7 +10,7 @@ class Home extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container margin">
+        <div className="container-css margin">
           <section className="slideshow">
             <div className="slideshow-container slide">
               <div className="slider1-css">
